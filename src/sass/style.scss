@@ -1,0 +1,27 @@
+@import 'libs/font';
+@import 'base/variables';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@import 'blocks/sidebar';
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/user';
+@import 'blocks/search';
+@import 'blocks/tasks';
+@import 'blocks/menu';
+@import 'blocks/page';
+@import 'blocks/avatar';
+@import 'blocks/link';
+@import 'blocks/circle';
+@import 'blocks/header__nav';
+@import 'blocks/taskborder';
+@import 'blocks/active';
+@import 'base/media';

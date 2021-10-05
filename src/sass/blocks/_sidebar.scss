@@ -1,0 +1,11 @@
+.sidebar {
+  width: 23%;
+  background-color: black;
+  &__container {
+    padding: 0 20px 0px 30px;
+  }
+  &__icon {
+    width: 21.6px;
+    height: 18.9px;
+  }
+}

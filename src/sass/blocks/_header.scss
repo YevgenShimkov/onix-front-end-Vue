@@ -1,0 +1,31 @@
+.header {
+  padding: 39px 0 14px 0;
+  &__sidebar {
+    padding: 30px 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__subwrapper {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    &_width {
+      width: 278px;
+    }
+  }
+  &__logo {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      background-color: #febc0c;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.circle {
+  top: 6px;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 100%;
+  color: #929191;
+  line-height: 20px;
+  &__big {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_gray {
+    background: $grey-color;
+  }
+  &_yellow {
+    background: #fff8dd;
+  }
+  &_blue {
+    background: #e3efff;
+  }
+  &_green {
+    background: #cef9c6;
+  }
+  &__oval {
+    width: 67px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 28px;
+    &_grey {
+      background: $grey-color;
+    }
+    &_yellow {
+      width: 81px;
+      background: #fff8dd;
+    }
+  }
+}

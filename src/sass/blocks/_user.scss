@@ -1,0 +1,35 @@
+.user {
+  background-color: #202020;
+  padding: 16px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__subwrapper {
+    display: flex;
+    // width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+    }
+  }
+  &__info {
+    line-height: 5px;
+    margin-left: 15px;
+    width: 93px;
+  }
+  &__name {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  &__position {
+    font-size: 12px;
+    color: #9b9b9b;
+    font-weight: 300;
+  }
+}

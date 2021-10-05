@@ -5,11 +5,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Onix front-end test project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <h1>Hello world</h1>
+    <div class="page__content">
+        <section class="sidebar">
+            <div class="header__sidebar">
+                <div class="sidebar__container">
+                    <div class="header__wrapper">
+                        <div class="header__subwrapper">
+                            <img src="icons/Logo@3x.svg" alt="logo" class="sidebar__icon">
+                            <h2 class="title">Projectus</h2>
+                        </div>
+                        <a href="#" class="search"><img src="icons/Search@3x.svg" alt="search" class="search"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="user">
+                <div class="sidebar__container">
+                    <div class="user__wrapper">
+                        <div class="user__subwrapper">
+                            <img src="img/avatar/avatar_4.jpeg" alt="avatar" class="avatar">
+                            <div class="user__info">
+                                <p class="user__name">Jean Gonzales</p>
+                                <p class="user__position">Product Owner</p>
+                            </div>
+                        </div>
+                        <a href="#" class="link link__additional">...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="sidebar__container">
+                    <div class="tasks__wrapper">
+                        <div class="tasks__completed">
+                            <a href="#" class="link tasks__number">372</a>
+                            <div class="tasks__descr">Completed Tasks</div>
+                        </div>
+                        <div class="tasks__open">
+                            <a href="#" class="link tasks__number">11</a>
+                            <div class="tasks__descr">Open Tasks</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="sidebar__container">
+                    <h2 class="title title__menu">menu</h2>
+                    <ul class="menu__nav">
+                        <li class="menu__item">
+                            <a href="#" class="link">Home</a>
+                        </li>
+                        <li class="menu__item"> <a href="#" class="link">My Tasks</a></li>
+                        <li class="menu__item"> <a href="#" class="link">Notifications</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="page">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <img class="header__logo_icon" src="icons/Shapes@2x.png" alt="logo">
+                            <div class="title title__main">Website Redesign</div>
+                            <a href="#" class="link circle circle_gray">...</a>
+                        </div>
+                        <div class="header__subwrapper header__subwrapper_width">
+                            <div class="avatar__wrapper">
+                                <a href="#" class="link"><img class="avatar" src="img/avatar/avatar_3.jpeg"
+                                        alt="avatar"></a>
+                                <a href="#" class="link"><img class="avatar" src="img/avatar/avatar_2.jpeg"
+                                        alt="avatar"></a>
+                                <a href="#" class="link"><img class="avatar" src="img/avatar/avatar_1.jpeg"
+                                        alt="avatar"></a>
+                            </div>
+                            <a href="#" class="link circle__oval circle__oval_grey">Share</a>
+                            <a href="#" class="link circle__oval circle__oval_yellow"><img
+                                    src="icons/Combined Shape@1x.svg" alt="chat"> Chat</a>
+                        </div>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav_item"><a href="#" class="link">Tasks</a></li>
+                        <li class="header__nav_item"><a href="#" class="link">Kanban</a></li>
+                        <li class="header__nav_item active"><a href="#" class="link">Activity</a></li>
+                        <li class="header__nav_item"><a href="#" class="link">Calendar</a></li>
+                        <li class="header__nav_item"><a href="#" class="link">Files</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="taskborder">
+                <div class="taskborder__wrapper">
+                    <div class="container">
+                        <h2 class="title title__taskboard">today</h2>
+                        <div class="taskborder__item">
+                            <div class="circle__big circle_green">
+                                <img src="icons/done_icon.svg" alt="icon" class="taskborder__icon">
+                            </div>
+                            <div class="taskborder__content">
+                                <div class="taskborder__text">Darika Samak mark as done Listing on Product Hunt so that
+                                    we can reach as many potential users</div>
+                            </div>
+                            <div class="taskborder__time">8:40 PM</div>
+                        </div>
+                        <div class="taskborder__item">
+                            <div class="circle__big circle_yellow">
+                                <img src="icons/chat.svg" alt="icon" class="taskborder__icon">
+                            </div>
+                            <div class="taskborder__content">
+                                <div class="taskborder__text"> Emilee Simchenko commented on Account for teams and
+                                    personal in bottom style
+                                </div>
+                                <div class="taskborder__text taskborder__comment">During a project build, it is
+                                    necessary to evaluate the product design and development against project
+                                    requirements and outcomes
+                                </div>
+                            </div>
+                            <div class="taskborder__time">7:32 PM</div>
+                        </div>
+                        <div class="taskborder__item">
+                            <div class="circle__big circle_blue">
+                                <img src="icons/download_icon.svg" alt="icon" class="taskborder__icon">
+                            </div>
+                            <div class="taskborder__content">
+                                <div class="taskborder__text">Darika Samak uploaded 4 files on An option to search in
+                                    current
+                                    projects or in all projects</div>
+                                <div class="taskborder__images">
+                                    <img src="img/road.jpeg" alt="road" class="taskborder__images_itm">
+                                    <img src="img/beach.jpeg" alt="beach" class="taskborder__images_itm">
+                                    <img src="img/winter.jpeg" alt="winter" class="taskborder__images_itm">
+                                    <img src="img/dron_beach.jpeg" alt="beach" class="taskborder__images_itm">
+                                </div>
+                            </div>
+                            <div class="taskborder__time">6:02 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
