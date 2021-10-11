@@ -10,26 +10,30 @@ const htmlmin = require('gulp-htmlmin');
 gulp.task('server', function () {
   browserSync.init({
     server: {
-      baseDir: 'src',
+      baseDir: 'dist',
+      // baseDir: 'src',
     },
   });
   gulp.watch('src/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('styles', function () {
-  return gulp
-    .src('src/sass/**/*.+(scss|sass)') // /**/ означает- и все папки, что внутри с тамими же файлами
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(
-      rename({
-        prefix: '',
-        suffix: '.min',
-      })
-    )
-    .pipe(autoprefixer())
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src('src/sass/**/*.+(scss|sass)') // /**/ означает- и все папки, что внутри с тамими же файлами
+      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(
+        rename({
+          prefix: '',
+          suffix: '.min',
+        })
+      )
+      .pipe(autoprefixer())
+      .pipe(cleanCSS({compatibility: 'ie8'}))
+      // .pipe(gulp.dest('src/css'))
+      .pipe(gulp.dest('dist/css'))
+      .pipe(browserSync.stream())
+  );
 });
 
 /**
@@ -82,6 +86,12 @@ gulp.task('images', function () {
   return gulp.src('src/img/**/*').pipe(gulp.dest('dist/img')); // куда поместится файл
 });
 
+gulp.task('normal', function () {
+  return gulp
+    .src('src/css/**/*.css') // берем любые файлы в папке js  с расширением js
+    .pipe(gulp.dest('dist/css')); // куда поместится файл после min
+});
+
 gulp.task(
   'default',
   gulp.parallel(
@@ -92,6 +102,7 @@ gulp.task(
     'fonts',
     'icons',
     'images',
-    'html'
+    'html',
+    'normal'
   )
 );

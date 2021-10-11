@@ -27,10 +27,6 @@
     }
   }
   .sidebar {
-    &__icon {
-      width: 16px;
-      height: 14px;
-    }
     &__container {
       padding: 0 10px 0 10px;
     }
@@ -41,10 +37,12 @@
       text-align: center;
     }
     &__main {
-      font-size: 26px;
+      font-size: 24px;
+    }
+    &__sidebar {
+      align-items: center;
     }
   }
-
   .search {
     img {
       width: 12px;
@@ -172,6 +170,7 @@
       margin-top: 20px;
     }
     &__subwrapper {
+      justify-content: space-around;
       &_width {
         margin-top: 35px;
         width: 100%;
@@ -185,8 +184,10 @@
     }
   }
   .search {
-    height: 16px;
-    width: 16px;
+    margin-top: 8px;
+    img {
+      width: 16px;
+    }
   }
   .menu {
     &__nav {
