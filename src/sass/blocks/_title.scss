@@ -18,7 +18,7 @@
     &::before {
       display: inline-block;
       content: '';
-      background-image: url(/icons/Shapes@2x.png);
+      background-image: url(../icons/Shapes@2x.png);
       background-size: contain;
       width: 40px;
       height: 40px;
@@ -35,7 +35,7 @@
   &__sidebar {
     display: flex;
     &::before {
-      content: url(/icons/Logo@3x.svg);
+      content: url(../icons/Logo@3x.svg);
       padding-right: 13px;
     }
   }

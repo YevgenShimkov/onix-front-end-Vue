@@ -28,19 +28,19 @@
   &_yellow {
     background: #fff8dd;
     &::before {
-      background-image: url(/icons/chat.svg);
+      background-image: url(../icons/chat.svg);
     }
   }
   &_blue {
     background: #e3efff;
     &::before {
-      background-image: url(/icons/download_icon.svg);
+      background-image: url(../icons/download_icon.svg);
     }
   }
   &_green {
     background: #cef9c6;
     &::before {
-      background-image: url(/icons/done_icon.svg);
+      background-image: url(../icons/done_icon.svg);
     }
   }
   &__oval {
