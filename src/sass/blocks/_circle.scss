@@ -26,7 +26,7 @@
     background: $grey-color;
   }
   &_yellow {
-    background: #fff8dd;
+    background: $yellow-color;
     &::before {
       background-image: url(../icons/chat.svg);
     }
@@ -49,11 +49,21 @@
     border-radius: 15px;
     line-height: 28px;
     &_grey {
+      color: $black-color;
       background: $grey-color;
     }
     &_yellow {
       width: 81px;
-      background: #fff8dd;
+      background: $yellow-color;
+      color: #ffc200;
+      &::before {
+        display: inline-block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(../icons/Combined_Shape@1x.svg);
+        background-size: contain;
+      }
     }
   }
 }
