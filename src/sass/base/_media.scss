@@ -44,8 +44,9 @@
     }
   }
   .search {
-    img {
+    &::before {
       width: 12px;
+      height: 12px;
     }
   }
   .user {
@@ -113,6 +114,7 @@
       padding: 10px 15px;
       margin-top: 15px;
       border-radius: 8px;
+      font-size: 13px;
     }
     &__images {
       display: flex;
@@ -127,7 +129,7 @@
     width: 20px;
     height: 20px;
     font-size: 18px;
-    line-height: 12px;
+    line-height: 11px;
     &__big {
       width: 30px;
       height: 30px;
@@ -185,8 +187,9 @@
   }
   .search {
     margin-top: 8px;
-    img {
+    &::before {
       width: 16px;
+      height: 16px;
     }
   }
   .menu {
