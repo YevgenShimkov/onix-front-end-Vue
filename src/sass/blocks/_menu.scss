@@ -13,19 +13,21 @@
       color: #ffffff;
       font-size: 14px;
     }
-    &:last-child::after {
-      width: 20px;
-      height: 19px;
-      content: '3';
-      background-color: #ffc200;
-      border-radius: 50%;
-      margin-left: 9px;
-      color: #131313;
-      font-size: 13px;
-      font-weight: 500;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &_active {
+      &::after {
+        width: 20px;
+        height: 19px;
+        content: attr(data-after);
+        background-color: #ffc200;
+        border-radius: 50%;
+        margin-left: 9px;
+        color: #131313;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
