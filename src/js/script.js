@@ -122,7 +122,6 @@ function addClasses(nameClass, el) {
  */
 function deleteClasses(nameClass, parent) {
   parent.querySelectorAll('.' + nameClass).forEach((itm) => {
-    console.log(parent);
     itm.classList.remove(nameClass);
   });
 }
